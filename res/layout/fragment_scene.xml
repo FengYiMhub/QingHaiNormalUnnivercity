@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/father"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+ 
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:scaleType="matrix" />
+    
+     <ToggleButton
+		     android:id="@+id/toggleButton_auto"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentBottom="true"
+		     android:layout_marginBottom="16dp"
+		     android:textOff="语音导游"
+		     android:textOn="语音导游"
+		     />		    
+    
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <cn.edu.qhnu.qhsfdx.widget.TopBar
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

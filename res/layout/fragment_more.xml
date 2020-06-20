@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1.03"
+    android:orientation="vertical" >
+
+    <cn.edu.qhnu.qhsfdx.widget.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="150dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:background="@drawable/menu_trv" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button1"
+            android:layout_alignTop="@+id/button1"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="27dp"
+            android:text="版权信息"
+            android:textColor="#00000f"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="150dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:background="@drawable/menu_trv" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignTop="@+id/button2"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="27dp"
+            android:text="关于我们"
+            android:textColor="#00000f"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

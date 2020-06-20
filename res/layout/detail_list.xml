@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qhnu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/list_bg">
+
+    <cn.edu.qhnu.qhsfdx.widget.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <cn.edu.qhnu.qhsfdx.widget.ScrollViewExtend
+                android:id="@+id/scrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:background="#ffffff" >
+
+                <RelativeLayout
+                    android:id="@+id/father"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp" >
+
+                    <cn.edu.qhnu.qhsfdx.widget.MyViewPager
+                        android:id="@+id/my_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        qhnu:changeInterval="3000"
+                        qhnu:dotsBackground="#999999"
+                        qhnu:dotsBgAlpha="0.5"
+                        qhnu:dotsBlurImage="@drawable/page_indicator_unfocused"
+                        qhnu:dotsFocusImage="@drawable/page_indicator_focused"
+                        qhnu:dotsSpacing="5dp"
+                        qhnu:dotsViewHeight="30dp" >
+                    </cn.edu.qhnu.qhsfdx.widget.MyViewPager>
+
+                    <TextView
+                        android:id="@+id/textView_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/my_view_pager"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edit_small"
+                        android:ems="10"
+                        android:lineSpacingExtra="3dp"
+                        android:paddingTop="15dp"
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0f000f"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </cn.edu.qhnu.qhsfdx.widget.ScrollViewExtend>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f0ffff" >
+
+            <ImageView
+                android:id="@+id/button_player"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/play" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/button_player" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

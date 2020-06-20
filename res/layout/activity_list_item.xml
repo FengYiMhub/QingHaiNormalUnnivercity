@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+    android:orientation="vertical" >
+
+<!-- android:background="@drawable/edit_small" -->
+    <RelativeLayout
+        android:id="@+id/muitLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" 
+        android:layout_marginLeft="4dp" 
+        android:layout_marginRight="4dp"
+        android:background="@drawable/edit_small"
+        >
+        <TextView
+            android:id="@+id/textView_sceneshort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView_scenename"
+            android:layout_below="@+id/textView_scenename"         
+            android:text=" "
+            android:textColor="#666666"
+            android:textSize="14dp"
+			android:ellipsize="end"
+            android:maxLines="3"
+			android:layout_marginBottom="6dp"
+			android:layout_marginRight="4dp"/>
+
+        <ImageView
+            android:id="@+id/imageView_sceneicon"
+            android:layout_width="96dp"
+            android:layout_height="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp" android:layout_marginLeft="4dp" 
+            android:layout_marginRight="4dp" android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/textView_scenename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_sceneicon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#663300" android:layout_marginTop="6dp" android:singleLine="true" android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_scenename"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text=" "
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

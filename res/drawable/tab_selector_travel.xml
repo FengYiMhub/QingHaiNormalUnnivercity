@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="false" android:drawable="@drawable/icon_menu_1_travel"></item>
+    <item android:state_checked="true" android:drawable="@drawable/icon_menu_1_travel_focuse"></item>
+
+</selector>
